@@ -38,7 +38,7 @@ background_start()
 
 function background_start() {
     let random = Math.floor(Math.random() * 7) + 1;
-    document.getElementById('header-start').style.backgroundImage = `url(img/img${random}.png)`;
+    document.getElementById('header-start').style.backgroundImage = `url(img/${random}.png)`;
 }
 
 function viewTopScore() {
