@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: transparent;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: #171d23; */
+}
+
+
+/* .after-body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: var(--background);
+    transition: 0.5s;
+    z-index: 99999;
+    left: 0;
+} */
+
+canvas {
+    /* border: 0.5px solid black; */
+    /* z-index: 99999; */
+    background-color: #2b333c;
+}
+
+#header-start {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#play-1,
+#play-2 {
+    font-size: 60px;
+    color: white;
+    background-color: #0d1218;
+    margin: 20px 0px;
+    padding: 20px 81px;
+    cursor: pointer;
+}
+
+#play-1:hover,
+#play-2:hover {
+    background-color: #18212b;
+}
+
+#sorry {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #18212b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: none;
+    text-align: center;
+}
+
+#sorry h1 {
+    color: red;
+    font-size: 60px;
+}
+
+#sorry p {
+    color: red;
+    font-size: 40px;
+}
